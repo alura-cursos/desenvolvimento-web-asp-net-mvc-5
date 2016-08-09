@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="~/Content/Css/bootstrap.css" />
+    <link rel="stylesheet" href="~/Content/Css/Site.css" />
+</head>
+<body>
+    <div class="header">
+        <ul class="nav nav-pills pull-right">
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("Produtos", "Index", "Produto")</li>
+            <li>@Html.ActionLink("Categorias", "Index", "Categoria")</li>
+            <li>@Html.ActionLink("Usuários", "Index", "Usuario")</li>
+        </ul>
+        <h3 class="muted-text">Caelum Estoque</h3>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

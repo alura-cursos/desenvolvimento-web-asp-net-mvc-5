@@ -1,0 +1,17 @@
+﻿<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome da Categoria</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var categoria in ViewBag.Categorias)
+        {
+            <tr>
+                <td>@categoria.Id</td>
+                <td>@categoria.Nome</td>
+            </tr>
+        }
+    </tbody>
+</table>

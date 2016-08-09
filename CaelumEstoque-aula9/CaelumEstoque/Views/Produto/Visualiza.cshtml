@@ -1,0 +1,18 @@
+﻿@{
+    Layout = null;
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    Id: @ViewBag.Produto.Id<br />
+    Nome: @ViewBag.Produto.Nome<br />
+    Quantidade: @ViewBag.Produto.Quantidade<br />
+    Preço: @ViewBag.Produto.Preco<br />
+    Descricao: @ViewBag.Produto.Descricao<br />
+    Categoria: @ViewBag.Produto.Categoria.Nome<br />
+
+    @Html.RouteLink("Voltar para a lista", "ListaProdutos")
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de produtos</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome do Produto</th>
+                <th>Preco</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var produto in ViewBag.Produtos)
+            {
+                <tr>
+                    <td>@produto.Id</td>
+                    <td>@produto.Nome</td>
+                    <td>@produto.Preco</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
